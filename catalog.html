@@ -26,8 +26,8 @@
           <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </section>
         <section class="entrance">
-            <h2 class="account">Личный кабинет</h2>
-            <a href="">Равшан Джамшутович</a>
+            <h2 class="account visually-hidden">Личный кабинет</h2>
+            <a href="" class="account-name">Равшан Джамшутович</a>
             <a href="" class="my-orders">Мои заказы</a>
             <a href="" class="personal-area">Личный кабинет</a>
         </section>
@@ -58,11 +58,11 @@
       <h2 class="price-head">Цена:</h2>
       <!-- Здесь будет форма -->
     </section>
-    <section class="manufactures">
+    <section class="manufactures visually-hidden">
       <h2 class="manufactures-head">Производители</h2>
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset>
-          <legend>Производители:</legend>
+        <fieldset class="form-manufactures">
+          <legend class="checkbox-manufactures">Производители:</legend>
           <ul>
             <li class="filter-option">
               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
@@ -86,8 +86,8 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
-          <legend>Питание:</legend>
+        <fieldset class="form-electric">
+          <legend class="electric">Питание:</legend>
           <ul>
             <li class="filter-option">
               <input class="visually-hidden filter-input gilter-input-radio" type="radio" name="product-group" value="battery" id="filter-battery" checked>
@@ -109,7 +109,7 @@
       <!-- Здесь будет форма -->
     </section>
     <section class="drill">
-      <h2 class="drill-head">Перфораторы</h2>
+      <h2 class="drill-head visually-hidden">Перфораторы</h2>
       <ul class="drill-list">
         <li class="drill">
           <img src="img/perforator_2.jpg" alt="Перфоратор BOSCH BFG 3000">
@@ -217,7 +217,7 @@
       </section>  
      </footer>
      <section>
-        <h2 class="visually-hidden">Корзина ифно</h2>
+        <h2 class="visually-hidden visually-hidden">Корзина ифно</h2>
          <form class="appointment-form" action="html://echo.htmlacademy.ru" method="POST">
           <p class="">Товар добавлен а корзину!</p>
             <div class="popup popup-button">
