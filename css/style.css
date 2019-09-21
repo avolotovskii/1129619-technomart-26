@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
   
-    font-family: "PT Sans", "cuprum", sans-serif;
+    font-family: "Cuprum", "PT Sans", "Helvetica", sans-serif;
     font-size: 13px;
     line-height: 24px;
     font-weight: 400;
@@ -10,143 +10,294 @@ body {
     text-transform: none;
   }
 
-  a {
-    text-decoration: none;
-  }
-
-  .visually-hidden {
-      visibility: hidden;
-  }
-
-  .main-header-site {
-    font-family: "cuprum";
+header {
+    font-style: normal;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 23px;
+    font-family: "Cuprum";
     color: #ffffff;
-  
-    background-color: #293449;
-  }
 
-  .site-navigation {
-  list-style: none;
-  margin: 0px;
+    background-color: #f4f7f9;
 }
 
-.site-navigation a {
+.main-header-site {
+    font-style: normal;
+    font-size: 17px;
+    line-height: 18px;
     color: #ffffff;
+
+    background-color: #293449;
+}
+
+.search:hover,
+.bookmarks:hover,
+.basket:hover {
+    background-color: #212a3a;
+}
+
+.search:active,
+.bookmarks:active {
+    color: rgba(0, 0, 0, 0.6);
+    background-color: #161d29;
 }
 
 .purchase {
     background-color: #63a63e;
 }
 
- .main-navigation {
-     background-color: #32425c;
- }
 
-.user-navigation a {
-    font-family: "cuprum";
-    font-size: 17px;
-    color: #ffffff
+.purchase:hover {
+    background-color: #5fbb2d;
 }
 
-.user-navigation {
+.purchase:active {
+    color: rgba(0, 0, 0, 0.6);
+    background-color: #518534;
+}
+
+.main-header-site ul {
     list-style: none;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
-  background-color: #242424;
-}
 
-.main-head {
-    background-color: #f3f7f9;
-}
-
-.about-website{
-    margin: 0px;
+.site-navigation a {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .about-website {
-    color: #ef6c74;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 23px;
+    color: #ee3643;
 }
 
-.main-tel a {
-    color: #ef6c74;
-    font-size: 24px;    
+.tel-number {
+    font-size: 21px;
+    line-height: 21px;
+    color: #ee3643;
+    text-decoration: none;
 }
 
 .address {
     font-size: 14px;
+    line-height: 24px;
     color: #32425c;
 }
 
-.about-name {
-    font-family: "cuprum";
-    text-transform: uppercase;
-    font-size: 30px;
-    line-height: 30px;
+.entrance {
+    font-size: 21px;
+    line-height: 21px;
+    color: #000000;
+
+    background-color: #ffffff;
 }
 
-.transport {
-    list-style: none;
+.entrance a {
+    color: #000000;
+    text-decoration: none;
 }
 
-.contact-head {
-    font-family: "cuprum";
-    text-transform: uppercase;
-    font-size: 30px;
-    line-height: 30px;
+.entrance a:not(.account-name):hover {
+    color: #ee3643;
 }
 
-.footer-block {
+.entrance a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.my-orders,
+.personal-area {
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration: underline;
+    background-color: #f1f5f7;
+}
+
+.my-orders a:active,
+.personal-area a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.main-navigation {
+    font-size: 17px;
+    line-height: 17px;
+
     background-color: #32425c;
 }
 
-.main-footer-top {
-    color: #ffffff;
-    font-size: 18px;
-    font-family: "cuprum";
+.main-navigation ul {
+    list-style: none;
 }
 
-.main-footer-top a {
+.main-navigation a {
     color: #ffffff;
+    text-decoration: none;    
+}
+
+.user-navigation li:hover {
+    background-color: #293449;
+}
+
+.user-navigation li:active {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+main {
+    font-family: "PT Sans";
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.breadcrumbs {
+    font-size: 13px;
+    line-height: 18px;
+    list-style: none;
+}
+
+.breadcrumbs a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.main-perf {
+    font-family: "Cuprum";
+    font-size: 30px;
+    line-height: 30px;
+    color: #32425c;
+    text-transform: uppercase;
+    background-color: #f2f6f8;    
+}
+
+.checkbox-manufactures-head,
+.electric-head {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.filter-option {
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.filter-button {
+    background-color: #ffffff;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.drill {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.drill ul {
+    list-style: none;
+}
+
+.drill a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.old-price {
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #999999;
+    text-decoration: line-through;
+    text-transform: uppercase;
+}
+
+.new-price {
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #ee3643;
+    text-transform: uppercase;
+}
+
+.about-name,
+.contact-head {
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.about-title,
+.contact-text {
+    font-family: "PT Sans";
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.transport {
+    font-size: 18px;
+    line-height: 20px;
+    list-style: none;
+}
+
+.about-company,
+.contact-link {
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #ee3643;
+}
+
+.footer-block {
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+
+    background-color: #32425c;
+}
+
+.tel {
+    text-decoration: none;
+}
+
+.website-nav-footer ul {
+    list-style: none;
 }
 
 .website-nav-footer a {
-    color: #f1f5f7;
+    color: #ffffff; 
+    text-decoration: none;
 }
 
-.website-nav-footer-list {
+.website-nav-footer li:hover {
+    text-decoration: underline;
+}
+
+.website-nav-footer li:active {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.website-catalog-footer ul {
     list-style: none;
-    font-size: 18px;
-    font-family: "cuprum";
 }
 
-.website-catalog-footer-list {
-    list-style: none;
-    font-size: 18px;
-    font-family: "cuprum";
+.website-catalog-footer a {
+    color: #ffd180;
+    text-decoration: none;
 }
 
-.website-catalog-footer-list a{
-    color: #ffda96;
+.website-catalog-footer li:hover {
+    text-decoration: underline;
 }
 
-.contact a:last-child {
-    color: #ffffff;
-    background-color: #ee3643;
-    font-size: 14px;
-    line-height: 18px;
-    font-family: "cuprum";
-}
-
-.about a {
-    color: #ffffff;
-    background-color: #ee3643;
-    font-size: 14px;
-    line-height: 18px;
-    font-family: "cuprum";  
+.website-catalog-footer li:active {
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .footer-under-about {
@@ -154,22 +305,29 @@ body {
 }
 
 .info-teh {
-    color: #ffffff;
     font-size: 16px;
-    font-family: "cuprum";
     line-height: 18px;
-}
-
-.social-list a {
-    background-color: #212a3a;
+    color: #ffffff;
 }
 
 .social-list {
+    background-color: #212a3a;
+}
+
+.social-list li {
     list-style: none;
+    background-color: #212a3a;
+}
+
+.social-list li:hover {
+    background-color: #ee3643;
+}
+
+.social-list li:active {
+    background-color: #ee3643;
 }
 
 .footer-under-contacts {
-    font-family: "cuorum";
     font-size: 16px;
     line-height: 18px;
     color: #ffffff;
@@ -177,76 +335,13 @@ body {
 
 .footer-under-contacts a {
     color: #ffd180;
+    text-decoration: none;
 }
 
-.breadcrumbs {
-    list-style: none;
-    text-transform: uppercase;
+.footer-under-contacts a:hover {
+    text-decoration: underline;
 }
 
-.breadcrumbs a {
-    color: #000000;
-}
-
-.main-perf {
-    background-color: #f2f6f8;
-    font-family: "cuprum";
-    font-size: 30px;
-    text-transform: uppercase
-}
-
-.breadcrumbs a:hover,
-.breadcrumbs a:focus {
-  text-decoration: underline;
-}
-
-.filter fieldset {
-    border: none;
-  }
-
-.manufactures {
-    text-transform: uppercase;
-    font-size: 15px;
-}
-
-.manufactures ul {
-    list-style: none;
-}
-
-.electric-head,
-.checkbox-manufactures-head {
-    font-weight: bold; 
-}
-
-.name-drill {
-    font-size: 18px;
-}
-
-.name-drill a {
-    color: #000000;
-    font-weight: bold;
-}
-
-.old-price {
-    font-size: 17px;
-    color: #999999;
-    text-transform: uppercase;
-    text-decoration: line-through;
-}
-
-.new-price {
-    color: #ffffff;
-    background-color: #ee3643;
-    text-transform: uppercase;
-    font-size: 17px;
-}
-
-.drill {
-    list-style: none;
-}
-
-.filter-button {
-    color: #000000;
-    background-color: #ffffff;
-    text-transform: uppercase;
+.footer-under-contacts a:active {
+    color: #ee3643;
 }
