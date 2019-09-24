@@ -10,18 +10,15 @@ body {
     text-transform: none;
   }
 
-header {
-    font-style: normal;
+.main-header {
     font-size: 16px;
     line-height: 23px;
-    font-family: "Cuprum";
     color: #ffffff;
 
     background-color: #f4f7f9;
 }
 
 .main-header-site {
-    font-style: normal;
     font-size: 17px;
     line-height: 18px;
     color: #ffffff;
@@ -55,7 +52,7 @@ header {
     background-color: #518534;
 }
 
-.main-header-site ul {
+.site-navigation {
     list-style: none;
 }
 
@@ -67,8 +64,6 @@ header {
 
 .about-website {
     font-style: italic;
-    font-size: 16px;
-    line-height: 23px;
     color: #ee3643;
 }
 
@@ -89,7 +84,15 @@ header {
     font-size: 21px;
     line-height: 21px;
     color: #000000;
+}
 
+.accaunt-name {
+    background-color: #ffffff;
+}
+
+.accaunt, 
+.accaunt-in,
+.accaunt-reg {
     background-color: #ffffff;
 }
 
@@ -98,7 +101,7 @@ header {
     text-decoration: none;
 }
 
-.entrance a:not(.account-name):hover {
+.entrance a:not(.accaunt-name):hover {
     color: #ee3643;
 }
 
@@ -106,20 +109,24 @@ header {
     color: rgba(0, 0, 0, 0.3);
 }
 
-.my-orders,
-.personal-area {
-    font-size: 16px;
-    line-height: 18px;
-    text-decoration: underline;
-    background-color: #f1f5f7;
+.entrance ul {
+    list-style: none;
 }
 
-.my-orders a:active,
-.personal-area a:active {
+.accaunt-links {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.accaunt-links a {
+    text-decoration: underline;
+}
+
+.accaunt-links a:active {
     color: rgba(0, 0, 0, 0.3);
 }
 
-.main-navigation {
+.user-navigation {
     font-size: 17px;
     line-height: 17px;
 
@@ -135,15 +142,15 @@ header {
     text-decoration: none;    
 }
 
-.user-navigation li:hover {
+.user-navigation a:hover {
     background-color: #293449;
 }
 
-.user-navigation li:active {
+.user-navigation a:active {
     color: rgba(0, 0, 0, 0.5);
 }
 
-main {
+.main {
     font-family: "PT Sans";
     background-color: #ffffff;
     color: #000000;
@@ -161,7 +168,6 @@ main {
 }
 
 .main-perf {
-    font-family: "Cuprum";
     font-size: 30px;
     line-height: 30px;
     color: #32425c;
@@ -196,7 +202,7 @@ main {
     line-height: 20px;
 }
 
-.drill ul {
+.drill-list ul {
     list-style: none;
 }
 
@@ -205,33 +211,32 @@ main {
     color: #000000;
 }
 
-.old-price {
+.price {
     font-size: 17px;
     line-height: 18px;
+    text-transform: uppercase;
     font-weight: bold;
+}
+
+.old-price {
     color: #999999;
     text-decoration: line-through;
-    text-transform: uppercase;
+
 }
 
 .new-price {
-    font-size: 17px;
-    line-height: 18px;
-    font-weight: bold;
     color: #ffffff;
     background-color: #ee3643;
-    text-transform: uppercase;
+
 }
 
-.about-name,
-.contact-head {
+.about-head {
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
 }
 
-.about-title,
-.contact-text {
+.about-title {
     font-family: "PT Sans";
     font-size: 13px;
     line-height: 24px;
@@ -243,8 +248,7 @@ main {
     list-style: none;
 }
 
-.about-company,
-.contact-link {
+.about-link {
     font-size: 14px;
     line-height: 18px;
     color: #ffffff;
@@ -264,9 +268,10 @@ main {
 
 .tel {
     text-decoration: none;
+    color: #f3f7f9;
 }
 
-.website-nav-footer ul {
+.website-nav-footer-list li {
     list-style: none;
 }
 
@@ -275,11 +280,11 @@ main {
     text-decoration: none;
 }
 
-.website-nav-footer li:hover {
+.website-nav-footer a:hover {
     text-decoration: underline;
 }
 
-.website-nav-footer li:active {
+.website-nav-footer a:active {
     color: rgba(0, 0, 0, 0.5);
 }
 
@@ -292,11 +297,11 @@ main {
     text-decoration: none;
 }
 
-.website-catalog-footer li:hover {
+.website-catalog-footer a:hover {
     text-decoration: underline;
 }
 
-.website-catalog-footer li:active {
+.website-catalog-footer a:active {
     color: rgba(0, 0, 0, 0.5);
 }
 
@@ -310,20 +315,24 @@ main {
     color: #ffffff;
 }
 
-.social-list {
+.social-list ul {
+    list-style: none;
     background-color: #212a3a;
 }
 
 .social-list li {
     list-style: none;
+}
+
+.social-list a {
     background-color: #212a3a;
 }
 
-.social-list li:hover {
+.social-list a:hover {
     background-color: #ee3643;
 }
 
-.social-list li:active {
+.social-list a:active {
     background-color: #ee3643;
 }
 
@@ -344,4 +353,169 @@ main {
 
 .footer-under-contacts a:active {
     color: #ee3643;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* ----- Сеточные стили ----- */
+
+.wrap {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.main-header-site .wrap {
+    display: flex;
+}
+
+.site-navigation {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.main-brend {
+    width: 220px;
+}
+
+.search {
+    width: 270px;
+}
+
+.main-header-about {
+    display: flex;
+}
+
+.about-website {
+    width: 200px;
+    margin: 45px 0px 0px 82px;
+}
+
+.main-tel {
+    margin: 45px 0px 0px 70px;
+}
+
+.tel-number {
+    width: 270px;
+    padding-left: 73px;
+    padding-right: 49px;
+    border: 2px solid white;
+}
+
+.address {
+    margin-left: 8px;
+}
+
+.entrance {
+    margin: 45px 0px 0px 57px;
+}
+
+.accaunt-links {
+    display: flex;
+    width: 212px;
+    padding: 0;
+    
+}
+
+.user-navigation {
+    display: flex;
+}
+
+.breadcrumbs {
+    display: flex;
+}
+
+.about {
+    display: flex;
+}
+
+.company,
+.contact {
+    margin-top: 71px;
+}
+
+.company {
+    width: 523px;
+}
+
+.contact {
+    width: 305px;
+    margin-left: 113px;
+}
+
+.footer-block .wrap {
+    display: flex;
+}
+
+.footer-contacts {
+    margin-top: 30px;
+}
+
+.main-footer-top {
+    width: 330px;
+}
+
+.website-nav-footer-list {
+    margin: 43px 0px 0px 60px;
+    display: flex;
+}
+
+.website-catalog-footer-list {
+    margin: 40px 0px 0px 86px;
+    display: flex;
+}
+
+.footer-under-about .wrap {
+    display: flex;
+}
+
+.info-teh {
+    width: 230px;
+}
+
+.footer-social .social-list {
+    display: flex;
+    width: 133px;
+    margin: 17px 0px 0px 66px;
+}
+
+.footer-under-contacts {
+    display: flex;
+    margin-left: 116px;
+    width: 289px;
+}
+
+.email {
+    width: 140px;
+}
+
+.develop {
+    width: 100px;
+    margin-left: 51px;
+}
+
+.manufactures-block-left {
+    display: flex;
+    width: 224px;
+    margin: 0;
+    border: 0;
+}
+
+.block-right {
+    width: 695px;
 }
