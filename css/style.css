@@ -1,3 +1,6 @@
+html{ box-sizing: border-box;}
+*,*::after,*::before{box-sizing: inherit;}
+
 body {
     margin: 0;
     padding: 0;
@@ -167,6 +170,10 @@ body {
     text-decoration: none;
 }
 
+.manufactures ul {
+    list-style: none;
+}
+
 .main-perf {
     font-size: 30px;
     line-height: 30px;
@@ -202,7 +209,7 @@ body {
     line-height: 20px;
 }
 
-.drill-list ul {
+.drill-list {
     list-style: none;
 }
 
@@ -234,6 +241,7 @@ body {
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
+    font-family: "Cuprum";
 }
 
 .about-title {
@@ -246,6 +254,7 @@ body {
     font-size: 18px;
     line-height: 20px;
     list-style: none;
+    font-family: "Cuprum";
 }
 
 .about-link {
@@ -256,6 +265,7 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     background-color: #ee3643;
+    font-family: "Cuprum";
 }
 
 .footer-block {
@@ -387,6 +397,7 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 .main-brend {
@@ -397,17 +408,30 @@ body {
     width: 270px;
 }
 
+.bookmarks {
+    width: 150px;
+}
+
+.purchase {
+    width: 150px;
+}
+
+.basket {
+    width: 150px;
+}
+
 .main-header-about {
     display: flex;
+    padding-top: 50px;
 }
 
 .about-website {
     width: 200px;
-    margin: 45px 0px 0px 82px;
+    margin: 0px 0px 0px 82px;
 }
 
 .main-tel {
-    margin: 45px 0px 0px 70px;
+    margin: 0px 0px 0px 70px;
 }
 
 .tel-number {
@@ -422,7 +446,7 @@ body {
 }
 
 .entrance {
-    margin: 45px 0px 0px 57px;
+    margin: 0px 0px 0px 57px;
 }
 
 .accaunt-links {
@@ -434,6 +458,17 @@ body {
 
 .user-navigation {
     display: flex;
+    width: 940px;
+    padding: 0;
+    
+}
+
+.user-navigation li {
+    width: 140px;
+}
+
+.user-navigation-li {
+    width: 140px;
 }
 
 .breadcrumbs {
@@ -444,9 +479,8 @@ body {
     display: flex;
 }
 
-.company,
-.contact {
-    margin-top: 71px;
+.about {
+    padding-top: 71px;
 }
 
 .company {
@@ -470,6 +504,10 @@ body {
     width: 330px;
 }
 
+.main-footer-menu {
+    width: 548px;
+}
+
 .website-nav-footer-list {
     margin: 43px 0px 0px 60px;
     display: flex;
@@ -488,10 +526,13 @@ body {
     width: 230px;
 }
 
-.footer-social .social-list {
-    display: flex;
+.footer-social {
     width: 133px;
     margin: 17px 0px 0px 66px;
+}
+
+.social-list {
+    display: flex;
 }
 
 .footer-under-contacts {
@@ -509,13 +550,42 @@ body {
     margin-left: 51px;
 }
 
-.manufactures-block-left {
+.catalog {
     display: flex;
+}
+
+.manufactures-block-left {
     width: 224px;
-    margin: 0;
+    margin-right: 24px;
     border: 0;
 }
 
 .block-right {
-    width: 695px;
+    width: 699px;
+}
+
+.drill-catalog {
+    width: 699px;
+}
+
+.drill {
+    width: 218px;
+    margin-right: 20px;
+}
+
+.drill-list {
+    display: flex;
+    width: 699px;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+.drill-list li:nth-child(3n) {
+    margin-right: 0px;
+}
+
+.pagination {
+    display: flex;
+    width: 283px;
+    list-style: none;
 }
