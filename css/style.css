@@ -411,6 +411,10 @@ header {
     padding: 12px;
 }*/
 
+.site-navigation li {
+    display: flex;
+}
+
 .bookmarks a {
     padding: 12px 0 12px 43px;
     width: 150px;
