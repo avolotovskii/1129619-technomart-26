@@ -102,6 +102,7 @@ body {
 .entrance a {
     color: #000000;
     text-decoration: none;
+    display: block;
 }
 
 .entrance a:not(.accaunt-name):hover {
@@ -235,12 +236,13 @@ body {
 }
 
 .about-head {
-    padding: 6px 0 0 10px;
+    padding: 6px 0 0 0;
     margin: 0;
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
     font-family: "Cuprum";
+    font-weight: 400;
 }
 
 .about-title {
@@ -400,6 +402,7 @@ header {
 
 .main-header-site .wrap {
     display: flex;
+    align-items: flex-start;
 }
 
 .site-navigation {
@@ -407,16 +410,13 @@ header {
     margin: 0;
     width: 720px;
     padding: 0;
+    align-items: center;
 }
 
 .site-navigation li {
     display: flex;
 }
 
-.main-header-site {
-    height: 42px;
-    overflow: hidden;
-}
 
 .bookmarks a {
     padding: 12px 0 12px 42px;
@@ -431,7 +431,7 @@ header {
 
 .purchase a {
     width: 150px;
-    padding: 12px 0 12px 42px;
+    padding: 12px 0 12px 20px;
 }
 
 .main-brend {
@@ -508,11 +508,12 @@ header {
 
 .main-header-about {
     display: flex;
-    padding-top: 50px;
+    padding-top: 47px;
+    margin-bottom: 39px;
 }
 
 .main-header-about p:first-child {
-    margin: 0px;
+    margin: 3px 0 0 0;
     padding-left: 52px;
 }
 
@@ -522,27 +523,30 @@ header {
 }
 
 .main-tel {
-    padding: 2px 0px 0px 0px;
     margin-left: 70px;
 }
 
 .tel-number {
-    width: 270px;
-    padding: 10px 50px 0 65px;
-    margin-top: 20px;
+    width: 267px;
+    padding: 10px 50px 9px 69px;
     border: 2px solid white;
+    display: block;
 }
 
 .address {
-    margin-left: 8px;
+    margin: 3px 0 0 7px;
 }
 
 .entrance {
     display: flex;
-    margin: 0px 0px 0px 47px;
+    margin: 0 0 0 69px;
     padding: 0;
     width: 281px;
     list-style: none;
+}
+
+.entrance li:last-child {
+    margin-left: 10px;
 }
 
 .accaunt-in {
@@ -554,12 +558,7 @@ header {
 
 .accaunt-reg {
     width: 151px;
-    margin-left: 12px;
     padding: 11px 24px 13px 25px;
-}
-
-.main-navigation {
-    padding-top: 13px;
 }
 
 .accaunt-links {
@@ -571,14 +570,15 @@ header {
 
 .user-navigation {
     display: flex;
-    width: 940px;
-    padding: 21px 0 24px 52px;  
+    padding: 0; 
     align-content: space-between;
+    margin: 0;
 }
 
 .user-navigation a  {
+    display: block;
     width: 140px;
-    padding: 21px 27px 24px 27px;
+    padding: 17px 27px 20px 27px;
 }
 
 .main-block {
@@ -596,7 +596,8 @@ header {
 }
 
 .about {
-    padding: 71px 0px 75px 0px;
+    padding-top: 71px;
+    padding-bottom: 75px;
 }
 
 .about-text {
@@ -613,7 +614,7 @@ header {
 
 .contact {
     width: 305px;
-    margin-left: 113px;
+    margin-left: 118px;
 }
 
 .about-link {
@@ -788,6 +789,6 @@ padding-right: 60px;
     display: block;
     width: 100%;
     line-height: 18px;
-    padding: 16px 5px 16px 50px;
-    height: 50px;
+    padding: 12px 5px 12px 50px;
+    height: 42px;
 }
