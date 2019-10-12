@@ -951,3 +951,41 @@ body {
     padding: 12px 5px 12px 50px;
     height: 42px;
 }
+
+.popup {
+    position: fixed;
+  
+    color: #000000;
+  
+    background-color: #fff;
+    background-image: url("img/pattern-light.jpg");
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+.popup-feedback {
+    top: 120px;
+    left: 50%;
+  
+    width: 500px;
+    margin-left: -230px;
+    padding: 50px 80px;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.5);
+}
+
+.popup-close {
+    position: absolute;
+    top: 0;
+    right: -34px;
+    width: 22px;
+    height: 22px;
+
+    background-color: red;
+    border: 0;
+
+    cursor: pointer;
+}
+
+.feedback-down {
+    background-color: #f9f5f0;
+}
