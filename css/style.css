@@ -87,13 +87,30 @@ body {
 
 .search {
     width: 270px;
-    background-image: url("../img/icon/icon-search.svg");
-    background-repeat: no-repeat;
+    position: relative;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    opacity: 0.3;
 }
 
 .search-form {
     color: #ffffff;
     width: 270px;
+}
+
+.search input:hover~.search-icon {
+    opacity: 1;
+}
+
+.search input:focus~.search-icon {
+    fill: red;
+    opacity: 1;
 }
 
 .search-form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -988,4 +1005,8 @@ body {
 
 .feedback-down {
     background-color: #f9f5f0;
+}
+
+.drill span {
+    display: block;
 }
