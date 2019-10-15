@@ -51,6 +51,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 42px;
+    box-shadow: 0 5px #b52933;
 }
 
 .main-brend img {
@@ -60,6 +61,7 @@ body {
 
 .bookmarks {
     width: 150px;
+    position: relative;
 }
 
 .bookmarks a {
@@ -69,20 +71,54 @@ body {
 }
 
 .bookmarks::before {
-    width: 16px;
-    height: 18px;
-    background-color: #ff0000;
-    background-image: url("../img/icon/icon-bookmark.svg");
+    content: "";
+    width: 14px;
+    height: 16px;
+    position: absolute;
+    background-image: url(../img/icon/icon-bookmark.svg);
     background-repeat: no-repeat;
+    top: 11px;
+    left: 16px;
+    opacity: 0.3;
+}
+
+.bookmarks:hover::before {
+    opacity: 1;
+}
+
+.bookmarks:active::before {
+    opacity: 0.6;
 }
 
 .basket {
     width: 150px;
+    position: relative;
 }
 
 .basket a {
     width: 150px;
     padding: 12px 0 12px 48px;
+}
+
+.basket::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/icon/icon-cart.svg);
+    opacity: 0.3;
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    top: 11px;
+    left: 18px;
+
+}
+
+.basket:hover::before {
+    opacity: 1;
+}
+
+.basket:active::before {
+    opacity: 0.6;
 }
 
 .search {
@@ -91,11 +127,12 @@ body {
 }
 
 .search-icon {
-    width: 20px;
-    height: 20px;
+    width: 17px;
+    height: 17px;
     position: absolute;
     top: 50%;
     margin-top: -10px;
+    left: 15px;
     opacity: 0.3;
 }
 
@@ -136,10 +173,11 @@ body {
     background-color: #212a3a;
 }
 
-.search:active,
+.basket:active,
 .bookmarks:active {
     color: rgba(0, 0, 0, 0.6);
     background-color: #161d29;
+    opacity: 0.6;
 }
 
 .purchase {
@@ -158,7 +196,8 @@ body {
 
 .purchase:active {
     color: rgba(0, 0, 0, 0.6);
-    background-color: #518534;
+    background-color: #5fbb2d;
+    opacity: 0.5;
 }
 
 .main-header-about {
@@ -200,6 +239,7 @@ body {
 
 .main-tel {
     margin-left: 70px;
+    position: relative;
 }
 
 .tel-number {
@@ -211,6 +251,16 @@ body {
     padding: 10px 50px 9px 69px;
     border: 2px solid white;
     display: block;
+}
+
+.tel-number::before {
+    background-image: url(../img/icon/icon-phone.svg);
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    left: 11px;
 }
 
 .address {
@@ -225,11 +275,12 @@ body {
     line-height: 21px;
     color: #000000;
     display: flex;
-    margin: 0 0 0 69px;
+    margin: 0 0 0 50px;
     padding: 0;
-    width: 281px;
+    width: 300px;
     list-style: none;
     display: block;
+    position: relative;
 }
 
 .entrance-catalog a {
@@ -267,8 +318,9 @@ body {
 }
 
 .accaunt-name {
+    width: 300px;
     background-color: #ffffff;
-    padding: 10px 0 10px 27px;
+    padding: 10px 68px 10px 45px;
 }
 
 .accaunt-in {
@@ -280,6 +332,27 @@ body {
 .accaunt-reg {
     width: 151px;
     padding: 11px 24px 13px 25px;
+}
+
+.accaunt-icon {
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    left: 14px;
+    top: 12px;
+}
+
+.accaunt-logout {
+    position: absolute;
+    width: 21px;
+    height: 17px;
+    right: 10px;
+    top: 12px;
+}
+
+.accaunt-icon:hover,
+.accaunt-logout:hover {
+    fill: #32425c;
 }
 
 .accaunt, 
@@ -316,8 +389,12 @@ body {
     display: flex;
     width: 212px;
     padding: 0;
-    margin: 10px 0 0 0;
+    margin: 10px 0 0 18px;
     justify-content: flex-start;
+}
+
+.accaunt-links li {
+    margin-left: 0;
 }
 
 .accaunt-links a {
@@ -379,17 +456,44 @@ body {
     list-style: none;
     text-transform: uppercase;
     font-family: "PT Sans";
-    padding: 0px 0px 0px 55px;
+    padding: 0;
     margin: 20px 0 20px 0;
 }
 
 .breadcrumbs li {
-    padding-right: 40px;
+    margin-right: 40px;
+    position: relative;
 }
+
+.breadcrumbs li:not(:last-child)::after {
+    background-image: url(../img/icon/icon-right-small.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 12px;
+    right: -24px;
+    top: 2px;
+}
+
+
 
 .breadcrumbs a {
     color: #000000;
     text-decoration: none;
+    display: block;
+}
+
+.home {
+    display: block;
+    font-size: 0;
+    background-image: url(../img/icon/icon-home.svg);
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 12px;
+    position: absolute;
+    left: 0;
+    top: 1px;
 }
 
 .manufactures ul {
@@ -397,13 +501,15 @@ body {
 }
 
 .main-perf {
+    width: 940px;
     font-size: 30px;
     line-height: 30px;
     color: #32425c;
     font-weight: 300;
     text-transform: uppercase;
     background-color: #f2f6f8;  
-    padding: 30px 0 30px 28px;  
+    padding: 30px 0 30px 28px; 
+    margin-bottom: 19px; 
 }
 
 .checkbox-manufactures-head,
@@ -430,7 +536,7 @@ body {
 .drill {
     position: relative;
     display: inline-block;
-    width: 218px;
+    width: 219px;
     margin-right: 20px;
     margin-bottom: 20px;
     
@@ -463,7 +569,7 @@ body {
     top: 0;
     left: 0;
     
-    width: 218px;
+    width: 216px;
     height: 88px;
     padding: 40px 0;
     
@@ -508,7 +614,7 @@ body {
   }
 
   .drill .image {
-    width: 218px;
+    width: 217px;
     height: 168px;
   }
   
@@ -517,16 +623,20 @@ body {
   }
 
   .drill .name-drill {
+    font-family: "PT Suns";
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 500;
     min-height: 40px;
     padding: 0 25px;
-    margin-top: 10px;
-    margin-bottom: 15px;    
+    margin-top: 5px;
+    margin-bottom: 12px;    
   }
   
   .drill .old-price {
     min-height: 20px;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    margin-top: 12px;
+    margin-bottom: 0px;
     
     color: #999;
     text-decoration: line-through;
@@ -534,8 +644,8 @@ body {
 
   .drill .new-price {
     position: relative;
-    width: 80px;
-    margin: 10px auto;
+    width: 140px;
+    margin: 6px auto;
     margin-bottom: 20px;
     padding: 10px 30px;
     
@@ -576,6 +686,13 @@ body {
     line-height: 18px;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+.price-head {
+    font-size: 17px;
+    line-height: 30px;
+    font-family: "PT Suns";
+    margin-top: 50px;
 }
 
 .about-head {
@@ -635,18 +752,22 @@ body {
     line-height: 30px;
     text-transform: uppercase;
     font-weight: 300;
-    margin: 0;
+    margin: 0 0 26px 0;
 }
 
 .drill-about {
     background-color: #f2f6f8;
     display: block;
     margin: 0;
-    padding: 0 0 73px 0;
+    padding: 66px 0 68px 0;
+    margin: 27px 0 0 0;
 }
 
 .drill-about p {
     margin: 0;
+    font-family: "PT Suns";
+    font-size: 13px;
+    line-height: 24px;
 }
 
 .footer-block {
@@ -805,7 +926,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 68px;
+    height: 63px;
+    box-shadow: 0 5px #b52933;
 }
 
 .main-brend-foot img {
@@ -920,6 +1042,7 @@ body {
 
 .drill-catalog {
     width: 699px;
+    margin: 0 0 35px 0;
 }
 
 .drill-list {
@@ -934,17 +1057,34 @@ body {
     display: flex;
     width: 283px;
     list-style: none;
+    padding-left: 0;
+    margin: 0 0 30px 0;
+    font-family: "PT Suns";
+    font-size: 13px;
+    list-style: 18px;
+}
+
+.pagination li {
+    margin-right: 10px;
 }
 
 .pagination a {
     background-color: #ffffff;
-    margin-right: 10px;
-    padding: 11px 18px 11px 18px;
+
+    padding: 0;
     width: 38px;
-    height: 38px;
+    padding: 6px 0 6px 0;
     border: 1px solid #e5e5e5; 
-    border-radius: 5%;
+    border-radius: 10%;
     text-decoration: none;
+    display: block;
+    text-align: center;
+    color: #000000;
+    
+}
+
+.current-page a {
+    background-color: #ee3643;
 }
 
 .switch {
@@ -953,6 +1093,8 @@ body {
 
 .switch a {
     text-decoration: none;
+    width: auto;
+    padding: 6px 32px 6px 32px;
 }
 
 .search-form label {
