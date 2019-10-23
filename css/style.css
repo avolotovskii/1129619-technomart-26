@@ -70,7 +70,7 @@ body {
     justify-content: center;
 }
 
-.bookmarks::before {
+.bookmarks a::before {
     content: "";
     width: 14px;
     height: 16px;
@@ -82,11 +82,11 @@ body {
     opacity: 0.3;
 }
 
-.bookmarks:hover::before {
+.bookmarks a:hover::before {
     opacity: 1;
 }
 
-.bookmarks:active::before {
+.bookmarks a:active::before {
     opacity: 0.6;
 }
 
@@ -100,7 +100,7 @@ body {
     padding: 12px 0 12px 48px;
 }
 
-.basket::before {
+.basket a::before {
     content: "";
     position: absolute;
     background-image: url(../img/icon/icon-cart.svg);
@@ -113,11 +113,11 @@ body {
 
 }
 
-.basket:hover::before {
+.basket a:hover::before {
     opacity: 1;
 }
 
-.basket:active::before {
+.basket a:active::before {
     opacity: 0.6;
 }
 
@@ -167,9 +167,9 @@ body {
     color: #ffffff;
 }
 
-.search:hover,
-.bookmarks:hover,
-.basket:hover {
+.search-form:hover,
+.bookmarks a:hover,
+.basket a:hover {
     background-color: #212a3a;
 }
 
@@ -190,12 +190,12 @@ body {
     padding: 12px 0 12px 20px;
 }
 
-.purchase:hover {
+.purchase a:hover {
     background-color: #5fbb2d;
 }
 
-.purchase:active {
-    color: rgba(0, 0, 0, 0.6);
+.purchase a:active {
+    color: rgba(0, 0, 0, 0.5);
     background-color: #5fbb2d;
     opacity: 0.5;
 }
@@ -315,6 +315,7 @@ body {
     width: 281px;
     list-style: none;
     display: flex;
+    position: relative;
 }
 
 .accaunt-name {
@@ -327,6 +328,14 @@ body {
     width: 121px;
     padding: 11px 28px 13px 46px;
     margin: 0;   
+}
+
+.accaunt-icon-index {
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    left: 14px;
+    top: 12px;
 }
 
 .accaunt-reg {
@@ -422,12 +431,13 @@ body {
     width: 940px;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    box-shadow: 0 5px #293449;
 }
 
 .user-navigation a  {
     display: block;
 
-    padding: 17px 27px 20px 27px;
+    padding: 17px 27px 15px 27px;
 }
 
 .user-navigation a:hover {
@@ -435,18 +445,13 @@ body {
 }
 
 .user-navigation a:active {
-    color: rgba(0, 0, 0, 0.5);
+    opacity: 0.5;
 }
 
 .main {
     font-family: "PT Sans";
     background-color: #ffffff;
     color: #000000;
-}
-
-.main-block {
-    height: 1996px;
-    overflow: hidden;
 }
 
 .breadcrumbs {
@@ -476,8 +481,6 @@ body {
     top: 2px;
 }
 
-
-
 .breadcrumbs a {
     color: #000000;
     text-decoration: none;
@@ -496,8 +499,272 @@ body {
     top: 1px;
 }
 
+.promo-list {
+    display: flex;
+    width: 940px;
+    font-family: "Cuprum";
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.promo-lisr-left {
+    width: 622px;
+    display: flex;
+}
+
+.promo-list-right {
+
+}
+
+.promo-list a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.promo-list li {
+    display: block;
+    list-style: none;
+}
+
+.promo-list li:nth-child(3) {
+    margin-right: 0;
+}
+
+.promo-list li:nth-child(4) {
+    padding-left: 0;
+}
+
+.promo-list li:nth-child(5) {
+    margin-right: 0;
+}
+
+.promo-list li:last-child {
+    margin-right: 0;
+}
+
+.promo-list-head {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    width: 118px;
+    margin: 22px 0 12px 0;
+}
+
+.promo-list-text {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 18px;
+    width: 138px;
+    padding: 10px 24px;
+    background-color:rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    display: block;
+    margin: 0 0 14px 2px;
+}
+
+.promo-mat {
+    background-color: #ffbf47;
+    position: relative;
+    width: 300px;
+    padding: 0 167px 6px 22px;
+    margin: 0 20px 20px 0;
+}
+
+.promo-instr {
+    background-color: #3bbce3;
+    position: relative;
+    width: 300px;
+    padding: 0 167px 6px 22px;
+    margin: 0 20px 20px 0;
+}
+
+.promo-equipment {
+    background-color: #dc91d8;
+    position: relative;
+    width: 300px;
+    padding: 0 167px 6px 22px;
+    margin: 0 20px 20px 0;
+}
+
+.promo-discount {
+    background-color: #8ed78f;
+    position: relative;
+    padding: 0 167px 6px 22px;
+    margin: 0 0 20px 0;
+    display: block;
+}
+
+.promo-delivery {
+    background-color: #ffc047;
+    position: relative;
+    padding: 0 167px 6px 22px;
+    margin: 0 0 20px 0;
+}
+
+.popular-back {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f5f0;
+    padding: 30px 25px 30px 28px;
+}
+
+.popular-head {
+    margin: 0;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #32425c;
+}
+
+.promo-mat .promo-list-head::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/icon/icon-line.svg);
+    width: 44px;
+    height: 65px;
+    right: 42px;
+    top: 30px;
+}
+
+.promo-instr .promo-list-head::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/icon/icon-drill.svg);
+    background-repeat: no-repeat;
+    width: 75px;
+    height: 61px;
+    right: 26px;
+    top: 32px;
+}
+
+.promo-equipment .promo-list-head::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/icon/icon-tractor.svg);
+    background-repeat: no-repeat;
+    width: 78px;
+    height: 62px;
+    right: 29px;
+    top: 31px;
+}
+
+.promo-discount .promo-list-head::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/icon/icon-shopping-basket.svg);
+    background-repeat: no-repeat;
+    width: 59px;
+    height: 72px;
+    right: 44px;
+    top: 28px;
+}
+
+.promo-list-left {
+    width: 620px;
+    font-family: "Cuprum";
+    padding: 0;
+    flex-wrap: wrap;
+    margin: 0 20px 0 0;
+}
+
+.promo-list-left ul {
+    padding: 0;
+    display: block;
+}
+
+.promo-list-right {
+    display: block;
+    width: 300px;
+    font-family: "Cuprum";
+    padding: 0;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.promo-drill-head {
+    margin: 0;
+}
+
+.promo-delivery .promo-list-head::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/icon/icon-bus.svg);
+    background-repeat: no-repeat;
+    width: 78px;
+    height: 63px;
+    right: 31px;
+    top: 32px;
+}
+
+
+
+.promo-drill {
+    width: 620px;
+    padding: 0;
+}
+
+.promo-drill img {
+    width: 620px;
+}
+
+.all-popular {
+    text-decoration: none;
+    width: 252px;
+    background-color: #ee3643;
+    color: #fff;
+    padding: 10px 45px 6px 55px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.all-popular-manufacturers {
+    text-decoration: none;
+    width: 252px;
+    background-color: #ee3643;
+    color: #fff;
+    padding: 10px 45px 6px 55px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
 .manufactures ul {
     list-style: none;
+}
+
+.list-manufacturers {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.list-manufacturers li {
+    width: 219px;
+    height: 145px;
+    border: 1px solid #ccc;
+    display: flex;
+    margin-right: 20px;
+    margin-bottom: 21px;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-manufacturers li:hover {
+    box-shadow: 0px 4px 15px -6px black;
+}
+
+.list-manufacturers li:active {
+    opacity: 0.3;
+    box-shadow: 0px 5px 9px -2px black;
+}
+
+.list-manufacturers li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.list-manufacturers a {
+    display: block;
 }
 
 .main-perf {
@@ -533,10 +800,66 @@ body {
     text-transform: uppercase;
 }
 
+.drill .actions .bookmark,
+.drill-index .actions .bookmark {
+    display: block;
+    width: 129px;
+    margin: 0 auto;
+    margin-bottom: 7px;
+    padding: 7px 0;
+    
+    background-color: #63a63e;
+    border: 3px solid #63a63e;
+    border-bottom-color: #367315;
+    border-radius:3px;
+    
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "Cuprum", sans-serif;
+    line-height: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.popular-list-drill .actions .bookmark {
+    color: #32425c;
+    background: white;
+    border-bottom-color: #63a63e;
+  }
+
+  .drill .actions {
+    display: none;
+  }
+  
+  .drill:hover .actions {
+    display: block;
+  }
+
+  .drill .image {
+    width: 217px;
+    height: 168px;
+  }
+
+
 .drill {
     position: relative;
     display: inline-block;
     width: 219px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+    
+    border: 1px solid #ccc;
+}
+
+.drill-index {
+    position: relative;
+    display: inline-block;
+    width: 220px;
     margin-right: 20px;
     margin-bottom: 20px;
     
@@ -559,10 +882,29 @@ body {
     overflow: hidden;
     z-index: 20;
   }
+
+.flag {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    
+    width: 60px;
+    height: 60px;
+    
+    text-indent: -1000px;
+    overflow: hidden;
+    z-index: 20;
+}
   
 .drill .flag-new {
     background: url("../img/new-flag.png") no-repeat 0 0;
   }
+
+.flag-new {
+    background: url("../img/new-flag.png") no-repeat 0 0;
+}
+
+
 
   .drill .actions {
     position: absolute;
@@ -576,8 +918,21 @@ body {
     background-color: rgba(255,255,255,0.9);
     z-index: 10;
   }
+
+ .drill-index .actions {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 216px;
+    height: 88px;
+    padding: 40px 0;
+    
+    background-color: rgba(255,255,255,0.9);
+    z-index: 10;
+ } 
   
-  .drill .actions .buy,
+.drill .actions .buy,
 .drill .actions .bookmark {
   display: block;
   width: 129px;
@@ -599,11 +954,43 @@ body {
   text-transform: uppercase;
 }
 
+.drill-index .actions .buy,
+.drill-index .actions .bookmark {
+    display: block;
+    width: 129px;
+    margin: 0 auto;
+    margin-bottom: 7px;
+    padding: 7px 0;
+    
+    background-color: #63a63e;
+    border: 3px solid #63a63e;
+    border-bottom-color: #367315;
+    border-radius:3px;
+    
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "Cuprum", sans-serif;
+    line-height: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
 .drill .actions .bookmark {
     color: #32425c;
     background: white;
     border-bottom-color: #63a63e;
   }
+
+.drill-index .actions .bookmark {
+    color: #32425c;
+    background: white;
+    border-bottom-color: #63a63e;
+}
+
+.drill-index .actions {
+    display: none; 
+}
 
   .drill .actions {
     display: none;
@@ -613,14 +1000,27 @@ body {
     display: block;
   }
 
+.drill-index:hover .actions {
+    display: block;
+}
+
   .drill .image {
     width: 217px;
     height: 168px;
   }
+
+.drill-index .image {
+    width: 217px;
+    height: 168px; 
+}
   
   .drill .image img {
     max-width: 100%;
   }
+
+.drill-index .image img {
+    max-width: 100%;
+}
 
   .drill .name-drill {
     font-family: "PT Suns";
@@ -632,6 +1032,17 @@ body {
     margin-top: 5px;
     margin-bottom: 12px;    
   }
+
+.drill-index .name-drill {
+    font-family: "PT Suns";
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 500;
+    min-height: 40px;
+    padding: 0 25px;
+    margin-top: 5px;
+    margin-bottom: 12px; 
+}
   
   .drill .old-price {
     min-height: 20px;
@@ -641,6 +1052,15 @@ body {
     color: #999;
     text-decoration: line-through;
   }
+
+.drill-index .old-price {
+    min-height: 20px;
+    margin-top: 12px;
+    margin-bottom: 0px;
+    
+    color: #999;
+    text-decoration: line-through;
+}
 
   .drill .new-price {
     position: relative;
@@ -653,6 +1073,18 @@ body {
     background: #ee3643;
     border-radius: 3px;
   }
+
+.drill-index .new-price {
+    position: relative;
+    width: 140px;
+    margin: 6px auto;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    
+    color: white;
+    background: #ee3643;
+    border-radius: 3px;
+}
 
   .drill .new-price:after {
     content: "";
@@ -668,15 +1100,39 @@ body {
     border-left-color: #ee3643;
   }
 
-  .drill:nth-child(3n) {
+.drill-index .new-price:after {
+    content: "";
+    
+    position: absolute;
+    top: 0;
+    right: -20px;
+    
+    width: 0;
+    height: 0;
+    
+    border: 20px solid white;
+    border-left-color: #ee3643;
+}
+
+.drill:nth-child(3n) {
     margin-right: 0px;
 }
+
+.drill-index:nth-child(4) {
+    margin-right: 0;
+}
+
 
 .drill-list {
     list-style: none;
 }
 
 .drill a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.drill-index a {
     text-decoration: none;
     color: #000000;
 }
@@ -736,6 +1192,50 @@ body {
  margin-bottom: 20px;
 }
 
+.service-block {
+    background-color: #f5f8f9;
+}
+
+.website-promo {
+    display: flex;
+}
+
+.service-text {
+    font-size: 30px;
+    line-height: 30px;
+    font-family: "Cuprum";
+    text-transform: uppercase;
+}
+
+.service-about {
+    font-size: 13px;
+    line-height: 24px;
+    width: 406px;
+}
+
+.service ul {
+    width: 240px;
+    padding: 0;
+}
+
+.service li {
+    list-style: none;
+}
+
+
+.service button {
+    background-color: #32425c;
+    font-family: "Cuprum";
+    font-size: 21px;
+    line-height: 30px;
+    color: #fff;
+    width: 100%;
+    padding: 16px 0 15px 0;
+    border: 0;
+    border-bottom: 1px solid #293449;
+} 
+
+
 .about-link {
     font-size: 14px;
     line-height: 18px;
@@ -745,6 +1245,9 @@ body {
     text-decoration: none;
     background-color: #ee3643;
     font-family: "Cuprum";
+    border-radius: 3px;
+    width: 300px;
+    text-align: center;
 }
 
 .drill-about h2 {
@@ -797,7 +1300,7 @@ body {
 }
 
 .website-nav-footer a:active {
-    color: rgba(0, 0, 0, 0.5);
+    opacity: 0.5;
 }
 
 .website-catalog-footer ul {
@@ -814,7 +1317,7 @@ body {
 }
 
 .website-catalog-footer a:active {
-    color: rgba(0, 0, 0, 0.5);
+    opacity: 0.5;
 }
 
 .footer-under-about {
@@ -1041,8 +1544,24 @@ body {
 }
 
 .drill-catalog {
-    width: 699px;
+    width: 700px;
     margin: 0 0 35px 0;
+}
+
+.popular-catalog {
+    width: 940px;
+    margin: 0 0 35px 0;
+}
+
+.popular-list {
+    display: flex;
+    width: 940px;
+    padding: 0px;
+    margin: 20px auto;
+}
+
+.popular-list li:last-child {
+    margin-right: 0;
 }
 
 .drill-list {
@@ -1050,7 +1569,14 @@ body {
     width: 700px;
     flex-wrap: wrap;
     padding: 0px;
-    margin: 20px auto;
+    margin: 20px 0;
+}
+
+.drill-list-index {
+    display: flex;
+    width: 940px;
+    padding: 0px;
+    margin: 20px 0;
 }
 
 .pagination {
@@ -1112,6 +1638,7 @@ body {
 }
 
 .popup {
+    display: none;
     position: fixed;
   
     color: #000000;
@@ -1150,5 +1677,9 @@ body {
 }
 
 .drill span {
+    display: block;
+}
+
+.drill-index span {
     display: block;
 }

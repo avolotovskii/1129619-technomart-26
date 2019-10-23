@@ -18,6 +18,7 @@
                 <form class="search-form">
                   <label>
                     <input type="search" name="search" placeholder="Поиск">
+                    <svg fill="#ffffff" class="search-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
                   </label>
                 </form>
               </li>
@@ -39,7 +40,7 @@
               <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             </section>
             <ul class="entrance">
-                <li><a href="login.html" class="accaunt-in">Войти</a></li>
+                <li><a href="login.html" class="accaunt-in"><svg class="accaunt-icon-index" fill="#c5c5c5" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M14.875 8.5L6 0v6H0v5h6v6z"/><path d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>Войти</a></li>
                 <li><a href="" class="accaunt-reg">Регистрация</a></li>
             </ul>
           </section>
@@ -57,13 +58,13 @@
         </section>
       </header>
       <main class="main">
-        <section class="main-block">
         <div class="wrap">
           <h1 class="promo-block visually-hidden">Промо-блок</h1>
           <section class="website-promo">
             <h2 class="promo-head visually-hidden">Материал сайта</h2>
             <ul class="promo-list">
               <li class="promo-mat">
+                <div class="flag flag-new">Новинка</div>
                 <h3 class="promo-list-head"><a href="">Материалы</a></h3>
                 <a href="" class="promo-list-text">На любой вкус</a>
               </li>
@@ -75,19 +76,25 @@
                 <h3 class="promo-list-head"><a href="">Техника</a></h3>
                 <a href="" class="promo-list-text">Для стройки</a>
               </li>
-              <li class="promo-discount">
-                <h3 class="promo-list-head"><a href="">Скидки 50%</a></h3>
-                <a href="" class="promo-list-text">На 350 товаров</a>
-              </li>
-              <li class="promo-delivery">
-                <h3 class="promo-list-head"><a href="">Доставка</a></h3>
-                <a href="" class="promo-list-text">Бесплатно</a>
-              </li>
-              <li class="promo-drill">
-                <h3 class="promo-drill-head"><a href="">Дрели</a></h3>
-                <a href="technomart-catalog.psd" class="promo-drill-text">Соседям на радость</a>
-                <img src="img/men-drill1.jpg" alt="Мужчину с небольшой дрелью">
-                <img src="img/men-drill2.jpg" alt="Мужчина с очень большой дрелью">
+              <li class=promo-list-left>
+                <ul>
+                  <li class="promo-drill">
+                     <h3 class="promo-drill-head"><a href="">Дрели</a></h3>
+                     <a href="technomart-catalog.psd" class="promo-drill-text">Соседям на радость</a>
+                     <img src="img/men-drill1.jpg" alt="Мужчину с небольшой дрелью">
+                     <!-- <img src="img/men-drill2.jpg" alt="Мужчина с очень большой дрелью"> -->
+                  </li>
+                </ul>
+              <li>
+                <ul class="promo-list-right">
+                  <li class="promo-discount">
+                    <h3 class="promo-list-head"><a href="">Скидки 50%</a></h3>
+                    <a href="" class="promo-list-text">На 350 товаров</a>
+                  </li>
+                  <li class="promo-delivery">
+                    <h3 class="promo-list-head"><a href="">Доставка</a></h3>
+                    <a href="" class="promo-list-text">Бесплатно</a>
+                </ul>
               </li>
             </ul>
           </section>
@@ -96,34 +103,57 @@
               <h2 class="popular-head">Популярные товары:</h2>
               <a href="" class="all-popular">Все популрные товары</a>
             </section>
-            <ul class="popular-list">
-              <li class="drill">
-                <img src="img/perforator_1.jpg" alt="Перфоратор BOSCH BFG 9000">
-                <h3 class="name-drill"><a href="">Перфоратор BOSCH BFG 9000</a></h3>
-                <span class="old-price">22500</span>
-                <span class="new-price">25500</span>
-              </li>
-              <li class="drill">
-                <img src="img/perforator_2.jpg" alt="Перфоратор BOSCH BFG 3000">
-                <h3 class="name-drill"><a href="">Перфоратор BOSCH BFG 3000</a></h3>
-                <span class="old-price">22500</span>
-                <span class="new-price">15500</span>
-              </li>
-              <li class="drill">
-                <img src="img/perforator_3.jpg" alt="Перфоратор BOSCH BFG 6000">
-                <h3 class="name-drill"><a href="">Перфоратор BOSCH BFG 6000</a></h3>
-                <span class="old-price">30500</span>
-                <span class="new-price">25500</span>
-              </li>      
-              <li class="drill">
-              <img src="img/perforator_4.jpg" alt="Перфоратор BOSCH BFG 2000">
-              <h3 class="name-drill">Перфоратор BOSCH BFG 2000</h3>
-              <span class="new-price">12500</span>
-              </li>
-            </ul>
+            <section class="popular-catalog">
+              <ul class="drill-list-index">
+                <li class="drill-index">
+                    <div class="flag">новинка</div>
+                    <div class="actions">
+                        <a href="#" class="buy">Купить</a>
+                        <a href="#" class="bookmark">В закладки</a>
+                    </div>
+                  <img class="image" src="img/perforator_1.jpg" alt="Перфоратор BOSCH BFG 9000">
+                  <h3 class="name-drill"><a href="">Перфоратор BOSCH BFG 9000</a></h3>
+                    <span class="price old-price">32500 р.</span>
+                    <span class="price new-price">25500 р.</span>
+                </li>
+                  <li class="drill-index">
+                      <div class="flag">новинка</div>
+                      <div class="actions">
+                        <a href="#" class="buy">Купить</a>
+                        <a href="#" class="bookmark">В закладки</a>
+                      </div>
+                  <img class="image" src="img/perforator_2.jpg" alt="Перфоратор BOSCH BFG 3000">
+                  <h3 class="name-drill"><a href="">Перфоратор BOSCH BFG 3000</a></h3>
+                  <div class="price old-price">22500 р.</div>
+                  <div class="price new-price">15500 р.</div>
+                </li>
+                <li class="drill-index">
+                    <div class="flag">новинка</div>
+                    <div class="actions">
+                        <a href="#" class="buy">Купить</a>
+                        <a href="#" class="bookmark">В закладки</a>
+                    </div>
+                  <img src="img/perforator_3.jpg" alt="Перфоратор BOSCH BFG 6000">
+                  <h3 class="name-drill"><a href="">Перфоратор BOSCH BFG 6000</a></h3>
+                    <span class="price old-price">30500 р.</span>
+                    <span class="price new-price">25500 р.</span>
+                </li>      
+                <li class="drill-index">
+                    <div class="flag flag-new">новинка</div>
+                    <div class="actions">
+                        <a href="#" class="buy">Купить</a>
+                        <a href="#" class="bookmark">В закладки</a>
+                    </div>
+                <img src="img/perforator_4.jpg" alt="Перфоратор BOSCH BFG 2000">
+                <h3 class="name-drill">Перфоратор BOSCH BFG 2000</h3>
+                  <span class="price old-price"></span>
+                  <span class="price new-price">12500 р.</span>
+                </li>
+              </ul>
+            </section>
           </section>
           <section class="manufacturers">
-            <section class="manufacturers-head">
+            <section class="popular-back">
               <h2 class="popular-head">Популярные производители:</h2>
               <a href="" class="all-popular">Все производители</a>
             </section>
@@ -155,14 +185,17 @@
             </ul>
           </section>
         </div>
+        <div class="service-block">
         <section class="service wrap">
           <p class="service-text">Сервисы</p>
           <p class="service-about">Хороший интернет магазин отличается от плохого не только ценами
            Мы страраемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           <section class="service">
-             <button type="button">Доставка</button>
-             <button type="button" class="">Гарантия</button>
-             <button type="button" class="">Кредит</button>
+            <ul>
+             <li><button type="button">Доставка</button></li>
+             <li><button type="button" class="">Гарантия</button></li>
+             <li><button type="button" class="">Кредит</button></li>
+            </ul>
           </section>
           <section class="warranty">
              <h4 class="button-head">Доставка</h4>
@@ -171,6 +204,7 @@
                Ведь мы не плохо зарабатываем,
                поднимая его на ваш этаж!</p>
           </section>
+        </div>
         </section>
         </section>
           <section class="about wrap">
@@ -195,7 +229,6 @@
               <a href=""><img src="img/map.png" class="map" alt="Адрес магазина Техномарт: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></a>
               <a href="" class="about-link about-link-right">Заблудились? Напишите нам!</a>
             </section>
-          </section>
       </main>
      <footer class="main-footer">
         <section class="footer-block">
