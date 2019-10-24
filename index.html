@@ -84,7 +84,7 @@
                      <img src="img/men-drill1.jpg" alt="Мужчину с небольшой дрелью">
                      <!-- <img src="img/men-drill2.jpg" alt="Мужчина с очень большой дрелью"> -->
                   </li>
-                </ul>
+                </ul> 
               <li>
                 <ul class="promo-list-right">
                   <li class="promo-discount">
@@ -190,19 +190,36 @@
           <p class="service-text">Сервисы</p>
           <p class="service-about">Хороший интернет магазин отличается от плохого не только ценами
            Мы страраемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-          <section class="service">
-            <ul>
-             <li><button type="button">Доставка</button></li>
-             <li><button type="button" class="">Гарантия</button></li>
-             <li><button type="button" class="">Кредит</button></li>
-            </ul>
-          </section>
-          <section class="warranty">
-             <h4 class="button-head">Доставка</h4>
-               <p>Мы с удовольствием доставим ваш товар прямо
-               к вашему подьезду совершенно бесплатно!
-               Ведь мы не плохо зарабатываем,
-               поднимая его на ваш этаж!</p>
+          <section class="service-all">
+            <section class="service">
+              <ul>
+                <li><button type="button">Доставка</button></li>
+                <li><button type="button" class="">Гарантия</button></li>
+                <li><button type="button" class="">Кредит</button></li>
+              </ul>
+            </section>
+            <section class="service-list">
+              <section class="delivery">
+                <h4 class="button-head">Доставка</h4>
+                  <p>Мы с удовольствием доставим ваш товар прямо
+                  к вашему подьезду совершенно бесплатно!
+                  Ведь мы не плохо зарабатываем,<br>
+                  поднимая его на ваш этаж!</p>
+              </section>
+              <section class="warranty">
+                <h4 class="button-head">Гарантия</h4>
+                  <p>Если купленный у нас товар поломается или заискрит,<br> 
+                      а также в случае пожара, спровоцированного его возгоранием,<br>  
+                      вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
+                      Дом уж восстановите как-нибудь сами.</p>
+              </section>
+              <section class="credit">
+                <h4 class="button-head">Кредит</h4>
+                  <p>Залезть в долговую яму стало проще!<br> 
+                    Кредитные консультанты придут вам на помощь.</p>
+                  <a href="#" class="credit-request">Отправить заявку</a>
+              </section>
+            </section>
           </section>
         </div>
         </section>
@@ -290,7 +307,8 @@
      <section class="popup popup-feedback">
        <h2 class="popup-feedback-head visually-hidden">Письмо нам</h2>
         <form class="appointment-form" action="html://echo.htmlacademy.ru" method="POST">
-         <p class="appointment-item">
+          <section class="data-users">
+          <p class="appointment-item">
           <label for="appointment-name">Ваше имя:</label>
           <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
          </p>
@@ -298,6 +316,7 @@
           <label for="appointment-email">Ваш e-mail:</label>
           <input id="appointment-email" type="email" name="email" placeholder="email@example.com">
          </p>
+         </section>
          <p class="appointment-item">
           <label for="appointment-text">Текст письма:</label>
           <textarea id="appointment-text" name="text" placeholder="В свободной форме"></textarea>
@@ -306,8 +325,8 @@
          <button class="button" type="submit" class="button-send">Отправить</button>
          </div>
          <button class="modal-close" type="button">
-            Закрыть
-          </button>
+            <span class="visually-hidden">Закрыть</span>
+         </button>
         </form>
      </section>
      <section class="popup popup-contact">
@@ -320,5 +339,12 @@
           <span class="visually-hidden">Закрыть</span>
         </button>
       </section>
+      <section class="modal modal-map">
+          <h2 class="visually-hidden">Как до нас добраться</h2>
+          <p><img src="../1129619-technomart-26/img/map.png" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
+          <button class="modal-close" type="button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+        </section>
   </body>
 </html>
