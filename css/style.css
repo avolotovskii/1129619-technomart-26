@@ -17,6 +17,11 @@ body {
     text-transform: none;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
   .wrap {
     width: 960px;
     margin: 0 auto;
@@ -504,6 +509,7 @@ body {
     font-family: "Cuprum";
     padding: 0;
     flex-wrap: wrap;
+    margin: 58px 0 0 0;
 }
 
 .promo-lisr-left {
@@ -518,7 +524,6 @@ body {
 
 .promo-list li {
     list-style: none;
-    padding: 22px 0 12px 0;
 }
 
 .promo-list li:nth-child(3) {
@@ -690,6 +695,98 @@ body {
     top: 32px;
 }
 
+.slider {
+    position: relative;
+}
+
+.promo-drill {
+    display: none;
+    height: 266px;
+}
+
+.promo-drill a {
+    padding: 0 0 0 24px;
+}
+
+.promo-drill:nth-child(2) {
+    display: block;
+  }
+
+.promo-drill:nth-child(1) {
+    background-image: url("../img/men-drill2.jpg");
+    background-repeat: no-repeat;
+  }
+
+.promo-drill:nth-child(2) {
+    background-image: url("../img/Men-drill1.jpg");
+    background-repeat: no-repeat;
+  }
+
+.promo-drill h3 {
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.promo-drill-text {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.slider-controls {
+    position: absolute;
+    left: 50%;
+    bottom: 104px;
+    z-index: 100;
+    
+    width: 160px;
+    height: 18px;
+  
+    text-align: center;
+    font-size: 0;
+    transform: translateX(-50%);
+}
+
+.slider-controls .active::before {
+    content: "";
+  
+    position: absolute;
+    left: 27px;
+    top: 82px;
+    z-index: 2;
+    
+    width: 7px;
+    height: 7px;
+    margin: -4px;
+    
+    background-color: inherit;
+    border: 3px solid red;
+    border-radius: 50%;
+}
+
+.slider-controls i {
+    position: relative;
+    
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.slider-controls i::after {
+    content: "";
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    bottom: -69px;
+    left: 3px;
+    z-index: 1;
+    border-radius: 50%;
+    
+    background: #fff;
+}
 
 
 .promo-drill {
@@ -1187,7 +1284,8 @@ body {
 
 .service {
     position: relative;
-    padding: 0 0 54px 0;
+ 
+    padding: 84px 0 93px 0;
 }
 
 .service-block {
@@ -1203,14 +1301,14 @@ body {
     line-height: 30px;
     font-family: "Cuprum";
     text-transform: uppercase;
-    padding: 50px 0 0 0;
+    margin: 0 0 25px 0;
 }
 
 .service-about {
     font-size: 13px;
     line-height: 24px;
     width: 406px;
-    padding: 0 0 40px 0;
+    margin: 0 0 68px 0;
 }
 
 .service ul {
@@ -1225,7 +1323,7 @@ body {
     background-repeat: no-repeat;
     width: 10px;
     height: 279px;
-    top: -27px; 
+    top: -41px; 
     right: -1px;
 }
 
@@ -1251,8 +1349,17 @@ body {
 }
 
 .service-list {
-    margin: 18px 0 96px 79px;
+    margin-right: 80px;
+}
+
+.service-list ul {
+    margin: 0;
     position: relative;
+}
+
+.service-list button {
+    text-align: left;
+    padding-left: 23px;
 }
 
 .button-head {
@@ -1271,16 +1378,10 @@ body {
     border-radius: 3px;
 }
 
-.service-list p {
-    font-size: 13px;
-    line-height: 24px;
-    margin: 0 0 30px 0;
-}
-
 .delivery {
     width: 277px;
-    position: absolute;
-    display: ;
+    position: relative;
+    display: block;
 }
 
 .delivery h4 {
@@ -1300,7 +1401,7 @@ body {
 
 .warranty {
     width: 380px;
-    position: absolute;
+    position: relative;
     display: none;
 }
 
@@ -1321,7 +1422,7 @@ body {
 
 .credit {
     width: 283px;
-    position: absolute;
+    position: relative;
     display: none;
 }
 
@@ -1338,6 +1439,10 @@ body {
     height: 285px;  
     top: 0px;
     right: -325px;
+}
+
+.service button:hover {
+    background-color: #293449;
 }
 
 .about-link {
@@ -1751,32 +1856,47 @@ body {
     background-image: url("img/pattern-light.jpg");
     background-position: 0 0;
     background-repeat: repeat;
+    z-index: 999;
 }
 
 .popup-feedback {
     top: 120px;
     left: 50%;
   
-    width: 500px;
-    margin-left: -230px;
-    padding: 50px 80px;
+    width: 620px;
+    margin-left: -290px;
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.5);
     border-top: 7px solid #ee3643;
 }
 
+.popup-block {
+    margin: 48px 80px 40px 80px;
+}
+
+.popup-block label {
+    font-size: 18px;
+    line-height: 18px;
+}
+
 .appointment-item textarea {
-    width: 350px;
-    height: 150px;
+    width: 459px;
+    height: 113px;
+}
+
+.appointment-item input {
+    width: 218px;
+    height: 36px;
 }
 
 .data-users {
     display: flex;
 }
 
+
 .modal-close {
     position: absolute;
-    top: 0;
-    right: 17px;
+    top: 5px;
+    right: 20px;
     width: 22px;
     height: 22px;
   
@@ -1799,11 +1919,11 @@ body {
 
 .modal-close::before {
     transform: rotate(45deg);
-  }
+}
   
-  .modal-close::after {
+.modal-close::after {
     transform: rotate(-45deg);
-  }
+}
 
 .popup-close {
     position: absolute;
@@ -1820,8 +1940,18 @@ body {
 
 .feedback-down {
     width: 100%;
-    background-color: #f9f5f0;
-    padding: 10px 10px 10px 10px;
+    background-color: #f4f4f4;
+    padding: 37px 10px 37px 10px;
+}
+
+.feedback-down button {
+    font-size:14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    background-color: #ee3643;
+    border-radius: 3px;
+    padding: 12px 200px 12px 200px;
+    margin: 0 0 0 70px;
 }
 
 .drill span {
@@ -1836,13 +1966,14 @@ body {
     top: 50%;
     left: 50%;
   
-    width: 766px;
-    height: 561px;
+    width: 943px;
+    height: 448px;
     margin-top: -280px;
-    margin-left: -390px;
+    margin-left: -467px;
+    z-index: 999;
   }
 
-  .modal {
+.modal {
     display: none;
     position: fixed;
     
@@ -1853,4 +1984,84 @@ body {
     background-position: 0 0;
     background-repeat: repeat;
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
-  }
+}
+
+.popup-basket {
+    position: fixed;
+    display: none;
+  
+    color: #000000;
+  
+    background-color: #fff;
+    background-image: url("img/pattern-light.jpg");
+    background-position: 0 0;
+    background-repeat: repeat;
+    z-index: 999;
+
+    top: 120px;
+    left: 50%;
+  
+    width: 620px;
+    height: 282px;
+    margin-left: -290px;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.5);
+    border-top: 7px solid #ee3643;
+}
+
+.popup-basket p {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    padding: 65px 0 65px 0;
+    position: relative;
+}
+
+.popup-basket p::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/icon/form-1.svg);
+    background-repeat: no-repeat;
+    top: 45px;
+    left: 60px;
+    width: 100px;
+    height: 100px;
+}
+
+.popup-button {
+    background-color: #f1f1f1;
+    padding: 37px 0 37px 0;
+
+}
+
+.popup-basket .button {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding: 8px 60px 8px 60px;
+    margin: 0 0 0 30px;
+}
+
+.button-send {
+    background-color: #ee3643;
+}
+
+.form-manufactures {
+    border: none;
+}
+
+.form-electric {
+    border: none;
+}
+
+.filter-button {
+    padding: 12px 38px 12px 38px;
+    font-size: 13px;
+    line-height: 18px;
+    background-color: rgba(255,255,255,0.9);
+}
+
+.filter-option label {
+    font-size: 15px;
+    line-height: 20px;
+    font-family: "PT Sans";
+} 
