@@ -2002,6 +2002,11 @@ img {
     margin: 0;
 }
 
+.sorting a {
+    text-decoration: none;
+    color: #000;
+}
+
 .sorting li {
     list-style: none;
     margin: 0 68px 0 0;
@@ -2009,13 +2014,14 @@ img {
 
 .sorting-first li:not(:first-child) {
     opacity: 0.3;
+    border-bottom: 1px dotted red;
 }
 
 .sorting-first {
     width: 380px;
 }
 
-.sorting-active {
+.sorting-active a{
     color: #ee3643;
 }
 
