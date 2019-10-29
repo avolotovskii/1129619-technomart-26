@@ -22,8 +22,8 @@
                   </label>
                 </form>
               </li>
-              <li class="bookmarks"><a href="">Закладки</a></li>
-              <li class="basket"><a href="">Корзина</a></li>
+              <li class="bookmarks"><a href="">Закладки: 0</a></li>
+              <li class="basket"><a href="">Корзина: 0</a></li>
               <li class="purchase"><a href="">Оформить заказ</a></li>
             </ul>
          </div>
@@ -79,20 +79,24 @@
               <li class=promo-list-left>
                 <ul class="slider">
                   <li class="promo-drill">
-                        <h3 class="promo-drill-head"><a href="">Перфораторы</a></h3>
-                        <a href="technomart-catalog.psd" class="promo-drill-text">Настоящие мужские игрушки</a>
-                        <!-- <img src="img/men-drill2.jpg" alt="Мужчина с очень большой дрелью"> -->
+                     <h3 class="promo-drill-head"><a href="">Перфораторы</a></h3>
+                     <a href="technomart-catalog.psd" class="promo-drill-text">Настоящие мужские игрушки</a>
                   </li>
                   <li class="promo-drill">
                      <h3 class="promo-drill-head"><a href="">Дрели</a></h3>
-                     <a href="technomart-catalog.psd" class="promo-drill-text">Соседям на радость</a>
-                     <!-- <img src="img/men-drill1.jpg" alt="Мужчину с небольшой дрелью"> -->
+                     <a href="technomart-catalog.psd" class="promo-drill-text">Соседям на радость!</a>
                   </li>
-                  <div class="slider-controls">
-                      <i class="active"></i>
-                      <i></i>
-                  </div>
                 </ul> 
+                <div class="slider-controls">
+                    <i class="active"></i>
+                    <i></i>
+                </div>
+                <div class="slider-switching">
+                  <button class="previous"><span class="visually-hidden">Предыдущая</span>></button>
+                  <button class="next"><span class="visually-hidden">Следующая</span>></button>
+                </div>
+                <a href="catalog.html" class="slider-botton">Открыть каталог</a>
+              </li>
               <li>
                 <ul class="promo-list-right">
                   <li class="promo-discount">
@@ -201,7 +205,7 @@
           <section class="service-all">
             <section class="service-list">
               <ul>
-                <li><button type="button">Доставка</button></li>
+                <li class="service-active"><button type="button">Доставка</button></li>
                 <li><button type="button" class="">Гарантия</button></li>
                 <li><button type="button" class="">Кредит</button></li>
               </ul>
@@ -241,9 +245,9 @@
               <p class="about-text">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
                  Техномарт работает со многими транспортными компаниями:</p>
               <ul class="transport">
-                 <li>Деловые линии</li>
-                 <li>Автотрейдинг</li>
-                 <li>ЖелДорЭкспедиция</li>
+                 <li class="delin">Деловые линии</li>
+                 <li class="avtotr">Автотрейдинг</li>
+                 <li class="zd">ЖелДорЭкспедиция</li>
               </ul>
               <a href="" class="about-link">Подробнее о компаниии</a>
             </section>
@@ -351,7 +355,7 @@
       </section>
       <section class="modal modal-map">
           <h2 class="visually-hidden">Как до нас добраться</h2>
-          <p><img src="../1129619-technomart-26/img/map.jpg" width="943" height="448" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
+          <img src="img/map.jpg" width="943" height="448" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
           <button class="modal-close" type="button">
             <span class="visually-hidden">Закрыть</span>
           </button>

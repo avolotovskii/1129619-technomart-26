@@ -22,8 +22,8 @@
                   </label>
                 </form>
               </li>
-              <li class="bookmarks"><a href="">Закладки</a></li>
-              <li class="basket"><a href="">Корзина</a></li>
+              <li class="bookmarks"><a href="">Закладки: 0</a></li>
+              <li class="basket basket-active"><a href="">Корзина: 10</a></li>
               <li class="purchase"><a href="">Оформить заказ</a></li>
             </ul>
          </div>
@@ -75,8 +75,25 @@
       <div class="catalog">
     <section class="manufactures-block-left">
       <section class="price">
-        <h2 class="price-head">Цена:</h2>
-        <!-- Здесь будет форма -->
+        <h2 class="price-head">Фильтр:</h2>
+        <form method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="filter-item">
+            <legend>Цена:</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price"><input name="min-price" type="text" value="0"></label>
+                <label class="max-price">-<input name="max-price" type="text" value="30000"></label>
+              </div>
+            </div>
+          </fieldset>
+        </form>
       </section>
       <section class="manufactures">
         <h2 class="manufactures-head visually-hidden">Производители</h2>
@@ -127,8 +144,16 @@
     </section>
     <section class="block-right">
       <section class="sorting">
-      <h2 class="sorting-head">Сортировка</h2>
-      <!-- Здесь будет форма -->
+      <h2 class="sorting-head">Сортировка:</h2>
+        <ul class="sorting-first">
+          <li class="sorting-active"><a>По цене</a></li>
+          <li><a>По типу</a></li>
+          <li><a>По функционалу</a></li>
+        </ul>
+        <ul class="sorting-reg">
+          <li><span class="visually-hidden">Сортировка по возрастанию</span></li>
+          <li><span class="visually-hidden">Сортировка по убыванию</span></li>
+        </ul>
       </section>
       <section class="drill-catalog">
         <h2 class="drill-head visually-hidden">Перфораторы</h2>
