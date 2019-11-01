@@ -214,8 +214,8 @@ img {
 
 .main-header-about {
     display: flex;
-    padding-top: 47px;
-    margin-bottom: 39px;
+    padding-top: 50px;
+    margin-bottom: 40px;
 }
 
 .main-header-about p:first-child {
@@ -376,8 +376,15 @@ img {
 }
 
 .accaunt-name:hover svg,
-.accaunt-logout:hover {
+.accaunt-logout:hover svg {
     fill: #32425c;
+}
+
+
+
+.accaunt-name:active svg,
+.accaunt-logout:active svg{
+    opacity: 0.3;
 }
 
 .accaunt, 
@@ -396,8 +403,13 @@ img {
     color: #ee3643;
 }
 
-.entrance a:active {
+.entrance a:not(.accaunt-name):active {
+    color: #000;
     color: rgba(0, 0, 0, 0.3);
+}
+
+.entrance a:active svg {
+    opacity: 0.3;
 }
 
 .entrance ul {
@@ -438,8 +450,9 @@ img {
     text-decoration: underline;
 }
 
-.accaunt-links a:active {
-    opacity: 0.3;
+.entrance-catalog a:not(.accaunt-name):active {
+    color: rgba(0, 0, 0, 0.3);
+
 }
 
 .main-navigation ul {
@@ -459,13 +472,13 @@ img {
     width: 940px;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    box-shadow: 0 5px #293449;
+    position: relative;
+    z-index: 10;
 }
 
 .user-navigation a  {
     display: block;
-
-    padding: 17px 27px 15px 27px;
+    padding: 17px 27px 20px 27px;
 }
 
 .user-navigation a:hover {
@@ -473,8 +486,20 @@ img {
 }
 
 .user-navigation a:active {
-    opacity: 0.5;
-    background-color: rgba(11, 15, 22, 1);
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #1d2739;
+    border-color: #1d2739;
+}
+
+.user-navigation::after {
+    position: absolute;
+    content: "";
+    height: 5px;
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
+    left: 0;
+    background: #293449;
 }
 
 .main {
@@ -1026,7 +1051,7 @@ img {
     position: relative;
 }
 
-.actions a:first-child:hover{
+.actions a:first-child:hover {
     background-color: #5fbb2d;
     fill: #fff;
     border: 3px solid #5fbb2d;
@@ -1041,6 +1066,14 @@ img {
 
 .actions a:first-child:hover svg {
     opacity: 1;
+}
+
+.actions a:last-child:hover {
+    border-color: #32425c;
+}
+
+.actions a:last-child:active {
+    opacity: 0.3;
 }
 
 .buy-cart {
@@ -1205,15 +1238,19 @@ img {
   
   .drill:hover .actions {
     display: block;
+    background-color: #fff;
+    height: 140px;
   }
 
 .drill-index:hover .actions {
     display: block;
+    background-color: #fff;
+    height: 140px;
 }
 
 .drill-index:hover,
 .drill:hover {
-   box-shadow: 0px 10px 25px 0px rgba(29, 34, 49, 0.5)
+   box-shadow: 0px 10px 25px 0px rgba(29, 34, 49, 0.5);
 }
 
   .drill .image {
@@ -1449,7 +1486,7 @@ img {
 }
 
 .service-block {
-    background-color: #f5f8f9;
+    background-color: #f4f8f9;
 }
 
 .website-promo {
@@ -2087,6 +2124,11 @@ img {
     opacity: 1;
 }
 
+.sorting-active a:hover {
+    border-bottom: 1px dotted red;
+    color: #000;
+}
+
 .sorting-first {
     width: 380px;
 }
@@ -2263,6 +2305,7 @@ img {
     padding: 10px;
     border-radius: 3px;
     border: 2px solid #dee3e4;
+    resize: none;
 }
 
 .appointment-item input {
