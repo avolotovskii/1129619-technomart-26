@@ -21,6 +21,7 @@ body {
 	font-weight: 400;
 	color: #000000;
 	text-transform: none;
+	min-width: 960px;
 }
 
 img {
@@ -121,7 +122,7 @@ img {
 	left: 18px;
 }
 
-.basket-active {
+.site-navigation .active {
 	background-color: #ee3643;
 }
 
@@ -270,7 +271,7 @@ img {
 	color: #ee3643;
 	text-decoration: none;
 	width: 267px;
-	padding: 10px 50px 9px 69px;
+	padding: 10px 40px 9px 69px;
 	border: 2px solid white;
 	display: block;
 }
@@ -961,7 +962,7 @@ img {
 
 .manufactures ul {
 	list-style: none;
-	padding-left: 19px;
+	padding: 0;
 }
 
 .list-manufacturers {
@@ -974,24 +975,27 @@ img {
 
 .list-manufacturers li {
 	width: 219px;
+	margin-right: 21px;
+	margin-bottom: 19px;
+}
+
+.list-manufacturers a {
 	height: 145px;
 	border: 1px solid #ccc;
 	display: flex;
-	margin-right: 21px;
-	margin-bottom: 19px;
 	justify-content: center;
 	align-items: center;
 }
 
-.list-manufacturers li:nth-of-type(4) {
-	padding-bottom: 5px;
+.list-manufacturers li:nth-of-type(4) a {
+	padding-bottom: 12px;
 }
 
-.list-manufacturers li:nth-of-type(5) {
+.list-manufacturers li:nth-of-type(5) a {
 	padding: 6px 0 0 4px;
 }
 
-.list-manufacturers li:hover {
+.list-manufacturers a:hover {
 	box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
 	border: none;
 }
@@ -1003,10 +1007,6 @@ img {
 
 .list-manufacturers li:nth-child(4n) {
 	margin-right: 0;
-}
-
-.list-manufacturers a {
-	display: block;
 }
 
 .main-perf {
@@ -2279,6 +2279,10 @@ img {
 	z-index: 999;
 }
 
+.modal-popup {
+	display: block;
+}
+
 .popup-feedback {
 	top: 120px;
 	left: 50%;
@@ -2491,6 +2495,10 @@ img {
 	padding: 0;
 }
 
+.filter-option input{
+	display: none;
+}
+
 .filter-option label {
 	font-size: 15px;
 	line-height: 20px;
@@ -2498,32 +2506,42 @@ img {
 	display: block;
 	position: relative;
 	user-select: none;
-	padding-left: 15px;
+	padding-left: 35px;
 }
 
-.filter-input-checkbox + label::before {
-	content: "";
-	position: absolute;
-	width: 23px;
-	height: 23px;  
-	border: 2px solid #000000;
-	left: -26px;
-	top: 0;
-	background-image: url(/img/icon/icon-checkbox-off.svg);
-	background-repeat: no-repeat;
-	background-position: 0 0;
+.filter-option label:hover .checkbox-off, 
+.filter-option label:hover .checkbox-on {
+	fill: #b5b5b5;
 }
 
-.filter-input-checkbox:checked + label::after {
-	content: "";
+.filter-input:disabled ~ label .checkbox-off, 
+.filter-input:disabled ~ label .checkbox-on {
+	fill: #b5b5b5;
+	opacity: 0.3;
+}
+
+.filter-input:disabled ~ label, 
+.filter-input:disabled ~ label {
+	color: rgba(0, 0, 0, 0.4);
+}
+
+.checkbox-off,
+.checkbox-on {
 	position: absolute;
-	width: 23px;
-	height: 23px; 
-	background-image: url(/img/icon/icon-checkbox-on.svg);
-	left: -26px;
+	left: 0;
 	top: 0;
-	background-repeat: no-repeat;
-	background-position: 0 0;
+}
+
+.checkbox-on {
+	display: none;
+}
+
+.filter-input:checked ~ label .checkbox-off {
+	display: none;
+}
+
+.filter-input:checked ~ label .checkbox-on {
+	display: block;
 }
 
 .filter-input-radio + label::before {
@@ -2537,7 +2555,7 @@ img {
 	border: 5px solid #c5c5c5;
 }
 
-  .filter-input-radio:checked + label::after {
+.filter-input-radio:checked + label::after {
 	content: "";
 	position: absolute;
 	width: 7px;
@@ -2546,4 +2564,8 @@ img {
 	top: 7px;
 	left: -11px;
 	border-radius: 50%;
+}
+
+.show {
+	display: block;
 }

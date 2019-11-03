@@ -23,10 +23,10 @@
                 </form>
               </li>
               <li class="bookmarks"><a href="">Закладки: 0</a></li>
-              <li class="basket basket-active"><a href="">Корзина: 10</a></li>
+              <li class="basket active"><a href="">Корзина: 10</a></li>
               <li class="purchase"><a href="">Оформить заказ</a></li>
             </ul>
-         </div>
+          </div>
         </section>
         <section class="wrap">
           <section class="main-header-about">
@@ -58,7 +58,7 @@
               <li><a href="">Спецпредложения</a></li>
               <li><a href="">Доставка</a></li>
               <li><a href="">Контакты</a></li>
-           </ul>
+            </ul>
           </nav>
         </section>
       </header>
@@ -102,7 +102,16 @@
             <ul>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
-                <label for="filter-bosch">Bosch</label>
+                <label for="filter-bosch">
+                  <svg fill="#c5c5c5" class="checkbox-off" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                    <path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+                  </svg>
+                  <svg fill="#c5c5c5" class="checkbox-on" xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23">
+                    <path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
+                    <path d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
+                  </svg>
+                  Bosch
+                </label>
               </li>
               <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol" id="filter-interskol">
@@ -163,11 +172,11 @@
                 <a href="#" class="buy"><svg fill="#ffffff" class="buy-cart" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>Купить</a>
                 <a href="#" class="bookmark">В закладки</a>
               </div>
-           <img class="image" src="img/perforator_2.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
-           <h3 class="name-drill"><a href="">Перфоратор BOSCH BFG 3000</a></h3>
-           <div class="price old-price">22500 р.</div>
-           <div class="price new-price">15500 р.</div>
-         </li>
+            <img class="image" src="img/perforator_2.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
+            <h3 class="name-drill"><a href="">Перфоратор BOSCH BFG 3000</a></h3>
+            <div class="price old-price">22500 р.</div>
+            <div class="price new-price">15500 р.</div>
+          </li>
           <li class="drill">
               <div class="flag">новинка</div>
               <div class="actions">
@@ -309,9 +318,9 @@
           </nav>
         </section>
       </div>
-   </section>
+    </section>
    <section class="footer-under-about">
-     <div class="wrap">
+    <div class="wrap">
       <section class="info-teh">
         <p>© 2010-2019 Компания &#171;Техномарт&#187;</p>
         <p>Все права защищены</p>
@@ -333,9 +342,9 @@
           <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </p>
       </section>
-     </div>
+    </div>
    </section>  
- </footer>
+  </footer>
      <section class="popup-basket">
         <h2 class="visually-hidden">Корзина ифно</h2>
          <form class="popup-appointment-form" action="html://echo.htmlacademy.ru" method="POST">
