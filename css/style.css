@@ -950,6 +950,18 @@ img {
 	line-height: 18px;
 }
 
+.popular-product {
+	text-decoration: none;
+	width: 252px;
+	background-color: #ee3643;
+	color: #fff;
+	padding: 12px 39px 10px 55px;
+	border-radius: 3px;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 18px;
+}
+
 .all-popular-manufacturers {
 	text-decoration: none;
 	width: 252px;
@@ -2287,18 +2299,22 @@ img {
 	top: 120px;
 	left: 50%;
 	width: 620px;
-	margin-left: -290px;
+	margin-left: -310px;
 	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.5);
 	border-top: 7px solid #ee3643;
 }
 
 .popup-block {
-	padding: 48px 80px 40px 80px;
+	padding: 43px 80px 40px 80px;
 }
 
 .popup-block label {
 	font-size: 18px;
 	line-height: 18px;
+}
+
+.appointment-item {
+	margin: 23px 0 0 0;
 }
 
 .appointment-item textarea {
@@ -2316,6 +2332,7 @@ img {
 	padding: 10px;
 	border-radius: 3px;
 	border: 2px solid #dee3e4;
+	margin-top: 6px;
 }
 
 .data-users {
@@ -2324,6 +2341,10 @@ img {
 
 .data-users p {
 	margin: 0;
+}
+
+.data-users p:last-child {
+	margin-left: 22px;
 }
 
 .modal-close {
@@ -2403,6 +2424,14 @@ img {
 	margin-top: -224px;
 	margin-left: -471px;
 	z-index: 999;
+	background-image: url(/img/map.jpg);
+	background-repeat: no-repeat;
+}
+
+.modal-map iframe {
+	width: 943px;
+	height: 448px;
+	border: none;
 }
 
 .modal {
@@ -2544,27 +2573,6 @@ img {
 	display: block;
 }
 
-.filter-input-radio + label::before {
-	content: "";
-	position: absolute;
-    border-radius: 50%;
-	width: 25px;
-	height: 25px;
-	left: -20px;
-	top: -2px;
-	border: 5px solid #c5c5c5;
-}
-
-.filter-input-radio:checked + label::after {
-	content: "";
-	position: absolute;
-	width: 7px;
-	height: 7px;
-	background-color: #c5c5c5;
-	top: 7px;
-	left: -11px;
-	border-radius: 50%;
-}
 
 .show {
 	display: block;
