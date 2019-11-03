@@ -1035,6 +1035,7 @@ img {
 	line-height: 20px;
 	text-transform: uppercase;
 	margin-bottom: 20px;
+	display: flex;
 }
 
 .filter-button {
@@ -1337,6 +1338,7 @@ img {
 	margin-bottom: 0px;
 	color: #999;
 	text-decoration: line-through;
+	font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .drill-index .old-price {
@@ -2037,10 +2039,11 @@ img {
 
 .price-controls {
 	font-size: 0;
+	display: flex;
 }
 
 .price-controls label {
-	display: inline-block;
+	display: block;
 	width: 50%;
 	font-size: 16px;
 	text-transform: uppercase;
@@ -2492,4 +2495,55 @@ img {
 	font-size: 15px;
 	line-height: 20px;
 	font-family: "PT Sans", "Arial", sans-serif;
+	display: block;
+	position: relative;
+	user-select: none;
+	padding-left: 15px;
+}
+
+.filter-input-checkbox + label::before {
+	content: "";
+	position: absolute;
+	width: 23px;
+	height: 23px;  
+	border: 2px solid #000000;
+	left: -26px;
+	top: 0;
+	background-image: url(/img/icon/icon-checkbox-off.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.filter-input-checkbox:checked + label::after {
+	content: "";
+	position: absolute;
+	width: 23px;
+	height: 23px; 
+	background-image: url(/img/icon/icon-checkbox-on.svg);
+	left: -26px;
+	top: 0;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.filter-input-radio + label::before {
+	content: "";
+	position: absolute;
+    border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	left: -20px;
+	top: -2px;
+	border: 5px solid #c5c5c5;
+}
+
+  .filter-input-radio:checked + label::after {
+	content: "";
+	position: absolute;
+	width: 7px;
+	height: 7px;
+	background-color: #c5c5c5;
+	top: 7px;
+	left: -11px;
+	border-radius: 50%;
 }
