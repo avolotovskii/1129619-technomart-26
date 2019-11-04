@@ -1613,10 +1613,14 @@ img {
 
 .credit-request {
 	background-color: #ff5357;
-	padding: 10px 43px 10px 43px;
+	padding: 10px 44px 12px 45px;
 	text-decoration: none;
 	border-radius: 3px;
 	color: #fff;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
 }
 
 .delivery {
@@ -1671,6 +1675,10 @@ img {
 	position: relative;
 }
 
+.credit p {
+	margin: 0 0 33px 0;
+}
+
 .credit p::after {
 	content: "";
 	position: absolute;
@@ -1679,7 +1687,7 @@ img {
 	width: 465px;
 	height: 285px;
 	top: -4px;
-	right: -325px;
+	right: -347px;
 }
 
 .service button:hover {
@@ -1718,7 +1726,7 @@ img {
 }
 
 .drill-about p {
-	margin: 0;
+	margin: 0 0 0 1px;
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 24px;
@@ -2305,7 +2313,7 @@ img {
 }
 
 .popup-block {
-	padding: 43px 80px 40px 80px;
+	padding: 45px 80px 30px 80px;
 }
 
 .popup-block label {
@@ -2314,25 +2322,28 @@ img {
 }
 
 .appointment-item {
-	margin: 23px 0 0 0;
+	margin: 19px 0 0 0;
 }
 
 .appointment-item textarea {
 	width: 459px;
 	height: 113px;
-	padding: 10px;
+	padding: 10px 0 0 14px;
 	border-radius: 3px;
 	border: 2px solid #dee3e4;
 	resize: none;
+	font-family: "PT Sans", "Arial", sans-serif;
+	margin-top: 5px;
 }
 
 .appointment-item input {
 	width: 218px;
 	height: 36px;
-	padding: 10px;
+	padding: 0 0 0 13px;
 	border-radius: 3px;
 	border: 2px solid #dee3e4;
-	margin-top: 6px;
+	margin-top: 7px;
+	font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .data-users {
@@ -2362,10 +2373,10 @@ img {
 .modal-close::after {
 	content: "";
 	position: absolute;
-	width: 19px;
+	width: 25px;
 	height: 3px;
-	left: 50%;
-	top: 50%;
+	left: 85%;
+	top: 63%;
 	margin: -1.5px 0 0 -9.5px;
 	background-color: red;
 }
@@ -2392,7 +2403,7 @@ img {
 .feedback-down {
 	width: 100%;
 	background-color: #f4f4f4;
-	padding: 37px 10px 37px 10px;
+	padding: 36px 10px 36px 10px;
 }
 
 .feedback-down button {
@@ -2402,7 +2413,7 @@ img {
 	text-transform: uppercase;
 	background-color: #ee3643;
 	border-radius: 3px;
-	padding: 12px 200px 12px 200px;
+	padding: 12px 200px 9px 200px;
 	margin: 0 auto;
 	border: 0;
 	color: #fff;
@@ -2465,7 +2476,7 @@ img {
 	font-size: 30px;
 	line-height: 30px;
 	text-align: center;
-	padding: 70px 0 65px 0;
+	padding: 64px 0 66px 55px;
 	position: relative;
 	margin: 0;
 }
@@ -2475,8 +2486,8 @@ img {
 	position: absolute;
 	background-image: url(../img/icon/form-1.svg);
 	background-repeat: no-repeat;
-	top: 45px;
-	left: 60px;
+	top: 46px;
+	left: 82px;
 	width: 66px;
 	height: 66px;
 }
@@ -2501,7 +2512,7 @@ img {
 	font-size: 14px;
 	line-height: 18px;
 	text-transform: uppercase;
-	padding: 8px;
+	padding: 13px 4px 8px 0px;
 	width: 220px;
 	border-radius: 3px;
 	border: none;
